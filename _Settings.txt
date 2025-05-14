@@ -1,0 +1,71 @@
+# Rent This Space Configuration
+# This notecard configures your rental space. Lines starting with "#" are notes and don't affect settings.
+# Feel free to add more settings below as your rental box code requires. Use clear comments to explain each new
+#       setting to help anyone else who might be configuring or updating this notecard in the future.
+
+# enter an email to allow notifications to also go to email (they already go to IM)
+# NOTICE - emails cause a 20 second delay after sending an email
+# This means there is a delay before marking itself as rented, etc. 
+# Just give it the time to do it's thing or don't use email
+Email for Notifications:
+
+# Name your rental spot! This name will be visible to potential renters.
+Spot Name: OpenRent Template
+
+# If someone clicks the rental box, which notecard should it give them? Type the notecard's name here.
+# Remember, it's case-sensitive!
+Info Notecard Name: Rental Info
+
+#Name of the Welcome Card to hand out to people who paid
+Welcome Notecard: Welcome Notecard
+
+# Add your group name and group UUID below in order to use the auto invite group function.
+# Note: this only works if you have open inviting set. If it's a closed group, just leave it blank
+# I set my group to anyone can join with an 'Everyone' role with minimal permissions and a tenant role with proper perms that I set later.
+Group Name: 
+Group UUID: 
+
+
+# How much does it cost to rent this space for a week? Enter the amount in L$.
+Rental Cost: 60000
+
+# Set this to 0 for no discount. This is a discount for renting 4 weeks at a time.
+Discount Percent: 10
+
+# How many prims can a renter use in this space? Set your limit here.
+Prim Count: 175
+
+# Define the size of your rental space in square meters.
+Rental Size: 512
+
+#Set to 1 to enable refunds. Refunds are disabled by default. DO NOT enable if you have Allow Owner Payment or Allow Group Payment enabled.
+Refunds Enabled: 1
+
+# If a renter wants a refund, how much do we deduct as a fee? Set that amount in L$.
+Refund Fee: 20
+
+#For the Mesh Rentalbox, Floating Text is off by default. Set to 1 to re-enable.
+Floating Text Enabled: 0
+
+#Grace Period in hours.
+#I recommend setting this to off or no more than a couple days to prevent the renter from constantly being in arrears.
+Grace Period: 12
+
+# Set to 1 to allow the Owner or group members to make payments to the rental box.
+#Rental box must be set to the same group as group members who will be making payments.
+Allow Owner Payment: 0
+Allow Group Payment: 1
+
+# Mesh Textures for various states
+For Rent Texture: for_rent_mesh
+
+# Leave Rented Texture commented out (or blank) to simply set the floating sign to fully transparent.
+Rented Texture: 
+Overdue Texture: overdue_mesh
+Locked Texture: locked_mesh
+Unavailable Texture: tempunavailable_mesh
+Reserved Texture: reserved_mesh
+
+# Alpha and Glow settings
+Mesh Alpha: 0.8
+Mesh Glow: 0.05

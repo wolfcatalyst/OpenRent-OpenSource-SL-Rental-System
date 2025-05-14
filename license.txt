@@ -1,0 +1,50 @@
+Open Source SL Rental System by Wolf Catalyst
+License Version 1.0 – Effective 5/14/2025
+
+---
+
+IMPORTANT NOTICE:
+
+This license applies retroactively to all past and current versions of this project. It clarifies the terms of redistribution and resale while preserving previously granted usage rights.
+
+- **End users may continue to use, modify, and distribute this system freely.**
+- **This license introduces retroactive conditions specifically for resale and attribution.**
+- **If you are not reselling or redistributing the system, no action is required.**
+
+---
+
+PERMISSIONS:
+- You may use, copy, modify, and redistribute this system freely.
+- You may resell this product (modified or unmodified) in SL Marketplace or in-world.
+
+REQUIREMENTS:
+
+1. SCRIPT LICENSING & ATTRIBUTION:
+- Scripts must remain open source and modifiable.
+- All scripts must retain original author credit: Wolf Catalyst.
+- You may add your name as a contributor if modifications are made, but you may not remove the original author’s name.
+
+2. RESALE & REPRESENTATION:
+- You may not sell this product or any variation of it as if you are the original creator.
+- Your resale listing must use your own assets for visuals and packaging (objects, HUDs, prims, etc.), and these must show **you** as the creator in SL object metadata.
+- You may not use the original author’s name to imply endorsement, support, or affiliation without explicit permission.
+
+3. SUPPORT:
+- Wolf Catalyst offers no support, updates, or refunds for versions not obtained directly from them.
+- End users who received the system from another seller must contact that seller for support.
+
+4. CONTRIBUTIONS:
+- If you make useful improvements or bug fixes, please consider submitting them for inclusion in the official version.
+- Contributions can be submitted via GitHub pull request or by contacting Wolf Catalyst.
+- The GitHub repository is curated and moderated. Only approved contributions will be merged.
+
+OPTIONAL COURTESY:
+- A link to the official GitHub repo or SL Marketplace listing is appreciated, but not required.
+
+---
+
+RETROACTIVE NOTICE:
+
+This license retroactively applies to all versions of the system, including those previously released without formal licensing. It does **not** revoke existing usage rights. It adds **clarity and conditions only** regarding redistribution, resale, and attribution.
+
+By continuing to use or distribute this system, you agree to these terms.

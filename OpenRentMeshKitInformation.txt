@@ -1,0 +1,41 @@
+Getting Started
+Configure Notecards: Add your information to the notecards. Disable any you don't need by leaving them blank from the Settings card or commenting them out with #.
+Set Up Settings Card: Include required rental information like cost and parcel size.
+
+##TLDR SETUP INSTRUCTIONS HERE##
+Save as Template: Rename the mesh, remove extra items, and save a copy to your inventory for quick setup at rental locations.
+#######################
+
+Transferred Features from Old Version
+Email Notifications: Track transactions easily (disabled by default).
+Group Invite: Add your group ID and name to enable.
+Notecard Options: Customizable for INFO and rental.
+Refund System: Options for off, no fee, or with a fee.
+Reserve Option: Reserve rentals for specific renters.
+Persistent Lease Info: Pick up, reset, and place without losing data.
+API Integration: Via Linked Messages.
+New Features
+Floating Text: Toggle on/off.
+Grace Period: Configurable, set to 0 or leave blank to skip.
+Lock Options: Unavailable or Locked with custom messages.
+Rental Textures Provided:
+Initializing
+Available for Rent
+Overdue (Red/Orange)
+Locked (Purple)
+Unavailable (Grey)
+Rented (customizable)
+Custom Textures: Rename to match or adjust names in the settings notecard. Basic templates provided.
+Time Period Textures: Provided for 7 days, 4 weeks, 8 weeks, 12 weeks, 6 months, and 12 months. Customizable naming scheme.
+Included Scripts
+Face Definer: Identify mesh faces for custom work.
+RentalSignDeleteScript & DieScript: Automate removal of signs/objects upon rental.
+Open Source & Customizable
+All scripts and textures are open source. Modify, add features, or use your own meshes as needed.
+
+ToDo List
+Memory Efficiency: Splitting up scripts.
+Flexible Refresh Times: Adjust based on lease duration and on-demand interactions.
+HTTP Reports & Web Interactivity: Optional plugin.
+Teleporter Plugin: Ideal for skybox rentals.
+'See My Other Properties': Potential future feature.

@@ -1,0 +1,59 @@
+Rent-This-Space v2.1
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Instructions:
+---------------
+The Rent-This-Space system is designed to be as straightforward and intuitive as possible in its configuration.
+    - To modify the rental price and other settings, open and edit the "Settings" notecard.  All of the settings are documented there.
+    - To accept any changes you have made to the Settings, reset the script using the Admin options.  Just click the Rent-This-Space cube and choose "RESET". Reset via the build menu also works.
+        - Before resetting the script, make sure the description field is blank if you want a 'fresh' rental box.
+    - To modify the textures used, simply replace the included textures with your own custom textures.  Either rename the textures to "infosign" and "rentthisspace" or change the names in the notecard.
+    - To change the size of the cube when it is open for rent, simply resize the prim when it is not rented.
+    - To resize the rental box for it's 'Rented' state, use the menu and look for Set Rented Pos.  Move and adjust the box, then touch the box when you're satisfied.
+        - Taking size and positon into account, the new position must be within 10m  
+    - To "gift" additional time to someone's cube, simply pay the cube more L$ (it will pay you as the owner).
+    - Make sure to rename the object with your company or location name to help keep track of rentals in My Accounts.
+    - Email has been added. If you add your email address to the Setings card, it will send that email address various information, that you also get via instant message. Comment out the llOwnerSay warning message for this function if you have no intention of using this feature.
+    - Update v2.2.
+    - Group handling has been added. Note: group must be set to allow people to join for this to work. I allow people to join but with bare bones permissions (set home point, etc) and then set them as a tenant when I log in. Leave group options blank if you don't want/need them or can't use them.  Comment out the llOwnerSay warning message for this function if you have no intention of using this feature.
+    - Added the ability to reserve a rental box for a specific user.
+    
+
+Features:
+-----------
+    - Easy to Setup and Configure.
+    - Open-source Rental script! Adapt to your needs! (Also adapt at your own risk!)
+    - Admin and Menus provide complete control over the system.
+    - Modifiable Prim and Textures.
+    - Prorated rents allow renters to pay as they go, when they can.
+    - Supports refund of the renter's unused time, minus a configurable fee.
+    - Supports 10 percent discount for 4 weeks pay.
+    - Supports FastPay buttons (llSetPayPrice).
+    - Customizable Positions for rented and non-rented states.
+    - Customizable Size for non-rented states.  Have the prim completely fill the rented space!
+    - Ability to force the end of a lease, with our without refund.
+    - Keeps tenant and payment state unchanged after sim reset or accidental return, rez out of inventory unchanged.
+    - Keeps tenant and payment state unchanged if the rental box is reset for some reason
+    - Email option for external tracking and notifications
+    - Can configure to provide a link to the group for tenant to join - leave group options blank if you don't need them or if the group is set to invite only
+    - Added option to reserve for a specific person
+
+
+Scripters Only
+-----------------
+    - Add more settings to the config card by adding them to the settings card and then updating the dataserver section with matching variables.
+    - Code added for 'API' :: uncomment the lines in the script that are for sendlinkedmessage function. This will send the data back to prim 0 (itself) which can then be picked up by other scripts
+            - (example: http send, etc.) Leaving this off because most people won't need it, but the code is there.
+    - When changing the size and position of the rental box, the 10m limit is recommended.  It could be changed to region-wide. 
+            - I considered this, because some cool features like.. the rental box going into storage when rented, could be implemented.
+            - however, it's much easier to lose your rental box if you make mistakes or reset during setup, etc.. I don't think this is a change every person needs.. just mentioning it so future scripters can play around. 
+
+
+
+Revision History:
+------------------
+Version 2.1 Distributed by Wolf (Domneth.Dingson)
+
+I've set the version to 2.0 and then 2.1 due to the amount of reworking and added functionality. If anyone decides to give a crack at this in the future, I'd consider splitting it up into different scripts, but that's for the next person to worry about. 
+
+This is a fork of the original open source script provided by  Hank Ramos. All previous contributors are listed in the script itself.

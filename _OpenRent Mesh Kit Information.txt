@@ -1,0 +1,60 @@
+Welcome to the OpenRent Mesh Kit
+
+Quick Instructions: Add your info to the notecards. Disable the notecards you don't want to use by deleting the name from the Settings card (you can choose to remove or leave in inventory). Not all rental situations may require a 'welcome' card, for example.  Set up the Settings card with the required rental information: rental cost, etc.
+
+Once you have your settings how you want them, rename it, delete any extra items out of the OpenRent mesh, and take a copy of it to your inventory. you now have a template you can drop down and quickly configure at any rental locations.
+
+
+
+
+Features from the 'Old' version (1 prim cube) that have been transferred over:
+
+Email notifications for easy tracking of transactions - Disabled by default. messages are provided via instant message to the owner as well.
+Group Invite - disabled by default. sImply add your group ID and Group name to enable this.
+Notecard Options for when someone clicks INFO as well as when someone rents
+Refund system - revamped to allow turning it off, refund with no fee, refund with a fee
+Reserve for a specific renter
+The rental system can be picked up, reset, and placed back down without losing track of the lease information. 
+'API' built in via Linked Messages.
+
+
+New Features:
+        Note: some features will likely make it over to the 1 prim cube version but for now these are only available in the OpenRent Mesh Kit. That system is designed to be simple and functional, while the OpenRent Mesh Kit is designed to be simple but full featured.
+
+
+Floating text can now be turned on or off.
+Grace period (not yet tested - should work). Set to 0 or leave blank to skip using grace period.
+Lock the rental box with 2 options: Unavailable or Locked (both result in locked but allow for different messages)
+enable or disable floating text - for the mesh system it is disabled by default.
+
+Rental textures have been provided for:
+- Available for Rent
+- Overdue (grace period) - comes in Red or Orange
+- Locked Texture (purple locked/unavailable)
+- Unavailable Texture (Grey, Temporarily unavailable)
+- A texture is not provided for 'Rented' but can be added to the system. Leaving this disabled makes the floating sign transparent.
+
+- Use your own textures as well, by either renaming them to match the ones in the OpenRent Mesh Kit or changing the names in the settings notecard. I'll provide some basic templates and you can always export the textures and use them as templates, too.
+
+Textures have also been provided for the following rental time periods: 7 days, 4 weeks, 8 weeks, 12 weeks, 6 months, and 12 months. As long as the textures are appropriately named, the system will always show the lease in the most practical texture. If there is more lease time, it will simply show the best texture and keep it at 100% full until the lease drops below the max limt.  Adding custom timeframe textures as well as removing ones you don't want is also possible. Simply name them along with the current naming scheme.
+
+
+
+This project is provided open source, including any textures. If you wish to make changes, add features, use your own mesh, edit something, have at it!
+
+Note: I've included a few scripts that I use regularly. These can be deleted from your OpenRent Mesh Kit:  
+Face Definer - This is useful for determining the number of a particular face of a mesh. Useful for creating your own meshes or custom scripts.
+RentalSignDeleteScript and DieScript - RentalSignDeleteScript - leave this in the OpenRent mesh. Put the DieScript into the sign/object you want self deleted if a property is rented.
+I use this to remove floating signs, Logo boards etc., so a new tenant doesn't need to deal with those if I'm not able to get online and remove them myself.
+
+
+ToDo: 
+    - Test grace period - TESTED. Seems good.
+    - Splitting up some of the scripts to make them more memory efficient.
+    - Remove / comment out some debugging code
+    - Adjust the refresh time period to be more flexible/ practical. 60 seconds isn't unreasonable, but if a parcel is leased for 2 months, there's no reason to update the time period every 60 seconds.
+        - This will be changed to update based on how long a lease is, as well as on demand (interacting with the system will update the rental period)
+        
+    - Working on HTTP reports next, with some web interactivity via an optional plugin.
+    - Teleporter with plugin  - ideal for skybox rental
+    - 'See my other properties' (maybe)
