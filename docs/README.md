@@ -15,7 +15,7 @@ You're on your own, champ—but good luck!
 
 ## Setup
 
-For a complete list of what goes inside the in-world rental box, see [contents_manifest.md](./rental-box-contents.md).
+For a complete list of what goes inside the in-world rental box, see [rental-box-contents.md](../rental-box-contents.md).
 
 ## 📦 Models
 
