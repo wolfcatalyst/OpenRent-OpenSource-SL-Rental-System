@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Wolf Starforge</author>
+			<authoring_tool>Firestorm-Releasex64 7.1.11.76496</authoring_tool>
+		</contributor>
+		<created>2025-05-14T20:09:29</created>
+		<modified>2025-05-14T20:09:29</modified>
+		<unit/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_images/>
+	<library_geometries>
+		<geometry id="prim0-mesh">
+			<mesh>
+				<source id="prim0-positions">
+					<float_array id="prim0-positions-array" count="60">0.439879 0.113123 -0.477356 -0.439879 0.122339 -0.180339 0.440002 0.0290761 -0.181056 -0.440002 0.206386 -0.476623 0.499863 -0.403166 -0.5 -0.499878 -0.394026 -0.157801 0.5 -0.5 -0.158625 -0.5 -0.297192 -0.499191 -0.399611 0.313367 0.499313 0.400023 0.415206 -0.159266 -0.39987 0.5 -0.15861 0.400282 0.228573 0.498657 0.400023 0.0853819 -0.158579 -0.399626 -0.0164569 0.5 -0.39987 0.170161 -0.157923 0.400267 -0.101236 0.499329 0.399901 0.352857 -0.457168 -0.399916 0.390456 -0.290143 0.399977 0.305661 -0.290799 -0.399992 0.437652 -0.456512</float_array>
+					<technique_common>
+						<accessor count="20" source="#prim0-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="prim0-normals">
+					<float_array id="prim0-normals-array" count="60">0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101642 0.95708 0.271417 0.101642 0.95708 0.271417 0.101642 0.95708 0.271417 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 -0.101699 -0.957068 -0.271436 -0.101699 -0.957068 -0.271436 -0.101699 -0.957068 -0.271436 -0.101669 -0.957071 -0.271437 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445 0.101672 0.957069 0.271445</float_array>
+					<technique_common>
+						<accessor count="20" source="#prim0-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="prim0-map0">
+					<float_array id="prim0-map0-array" count="40">0 0 1 1 0 1 1 0 0 0 1 1 0 1 1 0 1 1 0 0 1 0 0 1 1 0 0 1 0 0 1 1 0.5 0 1 1 0.5 1 1 0</float_array>
+					<technique_common>
+						<accessor count="20" source="#prim0-map0-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="prim0-vertices">
+					<input semantic="POSITION" source="#prim0-positions"/>
+				</vertices>
+				<polylist count="2" material="Material0-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#prim0-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>0 1 2 0 3 1</p>
+				</polylist>
+				<polylist count="2" material="Material1-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#prim0-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>4 5 6 4 7 5</p>
+				</polylist>
+				<polylist count="2" material="Material2-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#prim0-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>8 9 10 8 11 9</p>
+				</polylist>
+				<polylist count="2" material="Material3-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#prim0-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>12 13 14 12 15 13</p>
+				</polylist>
+				<polylist count="2" material="Material4-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#prim0-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>16 17 18 16 19 17</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_effects>
+		<effect id="Material0-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.862745 0.862745 0.862745 1</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material1-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.862745 0.862745 0.862745 1</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material2-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.862745 0.862745 0.862745 0.8</color>
+						</diffuse>
+						<transparency>
+							<float>0.8</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material3-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.862745 0.862745 0.862745 0.8</color>
+						</diffuse>
+						<transparency>
+							<float>0.8</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material4-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.862745 0.862745 0.862745 1</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="Material0-material">
+			<instance_effect url="#Material0-fx"/>
+		</material>
+		<material id="Material1-material">
+			<instance_effect url="#Material1-fx"/>
+		</material>
+		<material id="Material2-material">
+			<instance_effect url="#Material2-fx"/>
+		</material>
+		<material id="Material3-material">
+			<instance_effect url="#Material3-fx"/>
+		</material>
+		<material id="Material4-material">
+			<instance_effect url="#Material4-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node id="prim0" name="prim0">
+				<matrix>1.28373e-07 -0.0149997 -0.00440672 0 1.07687 5.18559e-08 -0.000422984 0 0.000607345 -8.81343e-05 0.749986 0 0 0 0 1</matrix>
+				<instance_geometry url="#prim0-mesh">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Material0-material" target="#Material0-material"/>
+							<instance_material symbol="Material1-material" target="#Material1-material"/>
+							<instance_material symbol="Material2-material" target="#Material2-material"/>
+							<instance_material symbol="Material3-material" target="#Material3-material"/>
+							<instance_material symbol="Material4-material" target="#Material4-material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

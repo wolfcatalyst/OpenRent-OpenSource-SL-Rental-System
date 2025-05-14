@@ -13,3 +13,15 @@ If you downloaded this project and are having issues:
 
 You're on your own, champ—but good luck!
 
+## Setup
+
+For a complete list of what goes inside the in-world rental box, see [contents_manifest.md](./contents_manifest.md).
+
+## 📦 Models
+
+Prebuilt mesh models are available in the [`models/`](./models) directory:
+
+- `.dae` files are ready for upload to Second Life
+- The included `.blend` file can be used for customization or reference
+
+These meshes are optimized to function as **1-prim** solutions that normally require multiple linked prims in standard SL builds.

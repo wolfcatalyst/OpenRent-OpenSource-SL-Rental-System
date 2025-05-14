@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Wolf Starforge</author>
+			<authoring_tool>Firestorm-Releasex64 7.1.11.76496</authoring_tool>
+		</contributor>
+		<created>2025-05-14T19:59:50</created>
+		<modified>2025-05-14T19:59:50</modified>
+		<unit/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_images/>
+	<library_geometries>
+		<geometry id="prim0-mesh">
+			<mesh>
+				<source id="prim0-positions">
+					<float_array id="prim0-positions-array" count="48">-0.440002 -0.433974 -0.480591 0.439986 0.433959 -0.480591 -0.440002 0.433959 -0.480591 0.439986 -0.433974 -0.480591 0.399992 -0.273602 -0.302182 -0.400008 -0.273602 0.5 0.399992 -0.273602 0.5 -0.400008 -0.273602 -0.302182 0.399992 -0.275723 0.5 -0.400008 -0.275723 -0.302182 0.399992 -0.275723 -0.302182 -0.400008 -0.275723 0.5 -0.400008 0.378264 -0.471511 0.399992 -0.112314 -0.471511 0.399992 0.378264 -0.471511 -0.400008 -0.112314 -0.471511</float_array>
+					<technique_common>
+						<accessor count="16" source="#prim0-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="prim0-normals">
+					<float_array id="prim0-normals-array" count="48">-1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 -1 -1.52593e-05 -1.52593e-05 -1 -1.52593e-05 -1.52593e-05 -1 -1.52593e-05 -1.52593e-05 -1 -1.52593e-05 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1 -1.52593e-05 -1.52593e-05 1</float_array>
+					<technique_common>
+						<accessor count="16" source="#prim0-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="unified-map0">
+					<float_array id="unified-map0-array" count="32">1 1 0 0 1 0 0 1 0 0 1 1 0 1 1 0 1 1 0 0 1 0 0 1 1 0 0.5 1 0.5 0 1 1</float_array>
+					<technique_common>
+						<accessor count="16" source="#unified-map0-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="prim0-vertices">
+					<input semantic="POSITION" source="#prim0-positions"/>
+				</vertices>
+				<polylist count="2" material="Material0-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#unified-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>0 1 2 0 3 1</p>
+				</polylist>
+				<polylist count="4" material="Material1-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#unified-map0" set="0"/>
+					<vcount>3 3 3 3</vcount>
+					<p>4 5 6 4 7 5 8 9 10 8 11 9</p>
+				</polylist>
+				<polylist count="2" material="Material2-material">
+					<input offset="0" semantic="VERTEX" source="#prim0-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#prim0-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#unified-map0" set="0"/>
+					<vcount>3 3</vcount>
+					<p>12 13 14 12 15 13</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_effects>
+		<effect id="Material0-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">1 1 1 1</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material1-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.8 0.8 0.8 0.8</color>
+						</diffuse>
+						<transparency>
+							<float>0.8</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material2-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.8 0.8 0.8 1</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Material3-fx">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<diffuse>
+							<color sid="diffuse">0.8 0.8 0.8 1</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="Material0-material">
+			<instance_effect url="#Material0-fx"/>
+		</material>
+		<material id="Material1-material">
+			<instance_effect url="#Material1-fx"/>
+		</material>
+		<material id="Material2-material">
+			<instance_effect url="#Material2-fx"/>
+		</material>
+		<material id="Material3-material">
+			<instance_effect url="#Material3-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node id="prim0" name="prim0">
+				<matrix>-2.38419e-07 -0.75 0 0 2 -8.9407e-08 0 0 0 0 1.25 0 0 0 0 1</matrix>
+				<instance_geometry url="#prim0-mesh">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Material0-material" target="#Material0-material"/>
+							<instance_material symbol="Material1-material" target="#Material1-material"/>
+							<instance_material symbol="Material2-material" target="#Material2-material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>
