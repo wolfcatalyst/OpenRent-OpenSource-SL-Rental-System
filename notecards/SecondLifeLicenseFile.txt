@@ -1,0 +1,71 @@
+OpenRent Rental System – Open Source License
+Version 1.0 – Effective [Insert Date]
+Author: WolfCatalyst
+
+---
+
+This system is provided as open source and may be freely used, modified, and redistributed, including for commercial purposes, under the following terms:
+
+---
+
+✅ PERMISSIONS
+
+You are allowed to:
+
+- Use and modify the system for personal or commercial use
+- Redistribute or resell the system (modified or unmodified)
+- Create your own rental systems based on this one
+
+---
+
+📌 REQUIREMENTS
+
+If you redistribute or resell this system:
+
+- Scripts must remain modifiable and retain credit to the original creator: **WolfCatalyst**
+- You may add your name as a contributor **but may not remove or obscure mine**
+- You may **not list or market this system as if you are the original creator**
+- All non-script assets (HUDs, meshes, textures, packaging) **must be your own** and show **you** as the in-world creator
+
+---
+
+📣 RETROACTIVE NOTICE
+
+This license applies **retroactively** to all versions of the OpenRent system, including those distributed prior to this license being published.
+
+While the project was previously shared under informal "open source, use as you wish" terms, no formal license was granted. As the original author and copyright holder, I now formally define the terms under which past and future use is allowed.
+
+If you continue to use or redistribute this system, you agree to comply with this license.
+
+---
+
+🚫 SUPPORT DISCLAIMER
+
+Support, updates, or bug fixes will only be provided for versions purchased **directly from me** or **my official shop in Second Life**.
+
+If you obtained this system through a third party or via GitHub:
+- You are welcome to use it
+- But **do not contact me for support or refunds**
+
+---
+
+📦 OFFICIAL REPO
+
+You can always get the latest version or read the full documentation at:
+
+🔗 https://github.com/wolfcatalyst/OpenRent-OpenSource-SL-Rental-System
+
+---
+
+🤝 CONTRIBUTIONS
+
+If you make improvements or bug fixes:
+- You're welcome to submit them via GitHub Pull Request
+- All submissions are reviewed manually
+- Only approved changes will be merged into the official version
+
+---
+
+Thank you for respecting the open-source spirit of this project while honoring proper attribution.
+
+— WolfCatalyst
