@@ -19,7 +19,7 @@ For a complete list of what goes inside the in-world rental box, see [rental-box
 
 ## 📦 Models
 
-Prebuilt mesh models are available in the [`models/`](./models) directory:
+Prebuilt mesh models are available in the [`models/`](../models) directory:
 
 - `.dae` files are ready for upload to Second Life
 - The included `.blend` file can be used for customization or reference
