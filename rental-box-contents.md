@@ -14,9 +14,9 @@ Any other scripts are optional or provided as examples for API usage.
 ---
 
 ## 📄 REQUIRED NOTECARDS
-- `Rental Info.txt` – Configures rental parameters (time, price, etc.)
-- `Welcome Notecard.txt` – Given to tenants upon successful rental
-- `_Settings.txt` – Advanced config overrides
+- `Rental Info.txt` – provides info when handed out.
+- `Welcome Notecard.txt` – Given to tenants upon successful rental.
+- `_Settings.txt` – Advanced config overrides - used to easily configure settings.
 - `OpenRentMeshKitInformation.txt` – (Recommended) Setup info and developer guidance
 
 ---
