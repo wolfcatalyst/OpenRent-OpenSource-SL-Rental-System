@@ -1,0 +1,179 @@
+OpenRent v3.1 - Features Overview
+==================================
+
+PROFESSIONAL SECOND LIFE RENTAL SYSTEM
+Open Source - Licensed for Commercial Use
+
+CORE FEATURES
+=============
+
+Payment & Billing
+------------------
+• Multiple payment options (1, 2, 3, 4 weeks)
+• Configurable 4-week package discounts
+• Automatic refund system with configurable fees
+• Owner and group payment support
+• Grace period management
+• Secure payment processing
+
+Smart Notifications
+-------------------
+• DUAL DELIVERY: Both instant message and email notifications
+• Smart reminders: 48-hour, 24-hour, 6-hour, and 1-hour lease expiration warnings
+• Owner alerts: Real-time notifications for all rental activities
+• Offline corrections: Automatic time adjustments with owner notifications
+• Professional notification system
+
+Management Features
+-------------------
+• Touch-based menu system for owners and renters
+• Lock/unlock functionality
+• Reserve spaces for specific renters
+• Floating text display (configurable)
+• Mesh texture state management
+• Real-time prim counting and monitoring
+
+Advanced Features
+-----------------
+• OFFLINE TIME TRACKING: Handles rental boxes taken to inventory
+• Adaptive Timers: Performance optimization based on lease urgency
+• Memory Optimized: Efficient script architecture
+• State Persistence: Maintains data through script resets
+• Integration Ready: Built-in support for security and teleport systems
+
+INCLUDED MODULES
+================
+
+Prim Counter Module (Pre-installed)
+-----------------------------------
+• Real-time parcel prim monitoring
+• Configurable access levels (owner-only, renter access, public access)
+• Aggressive mode for limit enforcement
+• Detailed reporting with multiple display options
+• Automatic texture changes when limits exceeded
+• 24-hour violation notifications
+
+Hello World Module (Example)
+-----------------------------
+• Demonstration module for developers
+• Shows proper channel communication
+• Template for creating custom modules
+• Not installed by default (development reference)
+
+FUTURE MODULES (In Development)
+===============================
+
+HTTP Module
+-----------
+• Remote monitoring and management
+• Web-based rental dashboard
+• API integration capabilities
+• Real-time status reporting
+
+Security Integration Module
+---------------------------
+• Automatic access granting/revoking
+• Integration with existing security systems
+• Configurable security protocols
+• Multi-system compatibility
+
+Teleport Integration Module
+---------------------------
+• Automatic teleport system management
+• Landmark distribution
+• Position-based teleporting
+• Multi-destination support
+
+COMPETITIVE ADVANTAGES
+======================
+
+vs. CasperLet and Similar Systems
+---------------------------------
+• NO EXTERNAL DEPENDENCIES: Works entirely within Second Life
+• INSTANT RESPONSIVENESS: No network latency or API delays
+• OFFLINE RESILIENCE: Handles real-world SL scenarios
+• MODULAR ARCHITECTURE: Expandable without core system changes
+• OPEN SOURCE: Full customization and transparency
+• PROFESSIONAL NOTIFICATIONS: Comprehensive owner communication
+• PERFORMANCE OPTIMIZED: Adaptive resource usage
+
+Technical Superiority
+----------------------
+• HYBRID APPROACH: Local reliability with modern features
+• STATE PERSISTENCE: Survives script resets and inventory storage
+• MEMORY EFFICIENT: Optimized for SL script limitations
+• CHANNEL MANAGEMENT: Secure inter-component communication
+• ERROR RECOVERY: Graceful handling of edge cases
+
+SYSTEM SPECIFICATIONS
+=====================
+
+• Script Memory: Optimized for SL 64KB limit per script
+• Timer Resolution: 1-minute minimum, adaptive scaling
+• Module Capacity: 20 modules maximum (configurable)
+• Channel Range: Full LSL integer range
+• Data Persistence: Object description + variable storage
+• Notification Delay: 20 seconds for email, instant for IM
+
+INSTALLATION REQUIREMENTS
+=========================
+
+Required Notecards:
+• "_Settings" - Main configuration file
+• "Rental Info" - Information given to potential renters
+• "Welcome Notecard" - Given to new renters after payment
+
+Required Scripts:
+• Rental Core.lsl - Main rental logic
+• Module Manager.lsl - Module system management
+• UI Manager.lsl - User interface handling
+• mesh script.lsl - Mesh texture management
+• Prim Counter.lsl - Prim monitoring (in modules folder)
+
+Optional Components:
+• Mesh models (.dae files)
+• Texture files (.tga files)
+• Additional module scripts
+
+LICENSE & SUPPORT
+=================
+
+LICENSE:
+This project is open source and provided under included license terms.
+• Commercial Use: Permitted under license terms
+• Modifications: Encouraged for personal and commercial use
+• Distribution: Allowed with proper attribution
+
+SUPPORT:
+Official Support: Available only for users who purchased the system directly from Wolf Catalyst in Second Life or from the SL Marketplace.
+
+Marketplace Link: https://marketplace.secondlife.com/p/OpenRent-OS-Mesh-Rental-System/25754107
+
+Community Support:
+• GitHub Issues for bug reports and feature requests
+• Fork and contribute improvements
+• Share modules and extensions
+
+No Support Policy: Downloaded versions from GitHub or third parties are provided as-is without support. You're welcome to troubleshoot, fork, or collaborate, but please don't contact Wolf Catalyst for help unless you're using the official in-world product.
+
+VERSION HISTORY
+===============
+
+v3.1 (Current)
+• Offline time correction system
+• Enhanced reminder notifications with owner alerts
+• Improved timer system with adaptive intervals
+• Bug fixes for reminder range checking
+• Memory optimization improvements
+
+v3.0
+• Modular architecture implementation
+• Module Manager system
+• Enhanced UI system
+• Performance optimizations
+
+========================================
+OpenRent v3.1 by Wolf Catalyst
+Open Source - Licensed for commercial use
+Ready to revolutionize your Second Life rental business!
+======================================== 

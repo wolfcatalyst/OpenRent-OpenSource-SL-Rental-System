@@ -1,0 +1,86 @@
+# Prim Counter Module Configuration
+# This notecard configures the behavior of the Prim Counter module
+
+# Module Communication Channel (0 = auto-assign random channel)
+# Set to a specific number to use that channel, or leave at 0 for automatic assignment
+# Valid range: 0 (auto) or 1000-4294967294
+MODULE_CHANNEL: 0
+
+# Access Control - Who can use the prim counter
+# owner_only = Only owner can access prim counter
+# available = Owner gets full reports, renter gets personal count
+# renter_only = Only renter can access (for self-monitoring)
+# disabled = Module completely disabled
+ACCESS_MODE: available
+
+# Owner Report Options - What detail level owners see
+# basic = Just total/owner/group/other counts
+# detailed = Basic + per-avatar breakdown with names
+# full = Detailed + selected/temp prims + parcel details
+OWNER_REPORT_LEVEL: detailed
+
+# Renter Report Options - What detail level renters see
+# personal = Just their prim count
+# parcel = Personal + total parcel count
+# detailed = Personal + breakdown of other users (without names)
+RENTER_REPORT_LEVEL: parcel
+
+# Display Method - How reports are delivered
+# im = Send via instant message
+# dialog = Show in dialog box (limited space)
+# both = Try dialog first, fallback to IM if too long
+DISPLAY_METHOD: im
+
+# Quick Access - Show quick count option in menus
+# yes = Include "Quick Count" option
+# no = Only show detailed reports
+QUICK_ACCESS: yes
+
+# Update Notifications - Notify when module settings change
+# yes = Send confirmation when settings are reloaded
+# no = Silent updates
+UPDATE_NOTIFICATIONS: yes
+
+# === AGGRESSIVE MODE SETTINGS ===
+# NOTE: Aggressive mode only activates when the rental system is RENTED
+# It will not check prim counts when idle, locked, or unavailable
+
+# Aggressive Mode - Enable automatic limit enforcement
+# disabled = Information only mode (default)
+# enabled = Activate texture changes and notifications when limits exceeded
+AGGRESSIVE_MODE: disabled
+
+# Aggressive Threshold - Prim count that triggers aggressive mode
+# Set to your desired prim limit (e.g., 200, 500, 1000)
+# 0 = Use prim count from main rental system (recommended)
+AGGRESSIVE_THRESHOLD: 0
+
+# Aggressive Texture - Texture to show when over limit
+# Use texture name from your texture inventory
+AGGRESSIVE_TEXTURE: overdue_mesh
+
+# Aggressive Message - Message to display when over limit
+AGGRESSIVE_MESSAGE: PRIM LIMIT EXCEEDED
+
+# Aggressive Check Interval - How often to check prim counts (seconds)
+# 86400 = 24 hours (recommended - once daily)
+# 43200 = 12 hours
+# 604800 = 7 days (weekly check)
+AGGRESSIVE_CHECK_INTERVAL: 86400
+
+# === AGGRESSIVE MODE NOTIFICATION OPTIONS ===
+
+# Notify Owner - Send notifications to parcel owner
+# yes = Send IMs to owner when limits are exceeded/restored
+# no = No owner notifications
+NOTIFY_OWNER: yes
+
+# Notify Renter - Send notifications to current renter
+# yes = Send IMs to renter when limits are exceeded/restored
+# no = No renter notifications
+NOTIFY_RENTER: yes
+
+# Set Texture - Change rental box texture when over limit
+# yes = Change texture to aggressive texture when over limit
+# no = Keep normal texture regardless of prim count
+SET_TEXTURE: yes 

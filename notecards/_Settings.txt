@@ -29,7 +29,16 @@ Group UUID:
 # How much does it cost to rent this space for a week? Enter the amount in L$.
 Rental Cost: 60000
 
-# Set this to 0 for no discount. This is a discount for renting 4 weeks at a time.
+# 4-Week Package Discount: Percentage discount applied to the 4-week payment option.
+# This discount applies to the TOTAL 4-week package price, not just the 4th week.
+# Examples (assuming L$100/week rental cost):
+#   0 = No discount (pay L$400 for 4 weeks)
+#   10 = 10% discount (pay L$360 for 4 weeks)
+#   25 = 25% discount (pay L$300 for 4 weeks)
+#   50 = 50% discount (pay L$200 for 4 weeks)
+#   100 = 100% discount (pay L$0 for 4 weeks) - NOT RECOMMENDED!
+# WARNING: Setting this to 100 will make the 4-week option disappear from the pay menu.
+# RECOMMENDED: Keep this between 0-50 for reasonable discounts.
 Discount Percent: 10
 
 # How many prims can a renter use in this space? Set your limit here.
@@ -69,3 +78,20 @@ Reserved Texture: reserved_mesh
 # Alpha and Glow settings
 Mesh Alpha: 0.8
 Mesh Glow: 0.05
+
+# Integration Settings - These settings configure integration with external systems
+# Security Integration - Set these to connect with your existing security system
+Security Password: YourSecurityPassword123
+Security Channel: -9876543
+Security Auto Grant: 1
+Security Auto Revoke: 1
+Security Notifications: 1
+
+# Teleport Integration - Set these to connect with your existing teleport system
+Teleport Password: YourTeleportPassword123
+Teleport Channel: -7654321
+Teleport Auto Add: 1
+Teleport Auto Remove: 1
+Teleport Landmark: 
+Teleport Position: 
+Teleport LookAt: 

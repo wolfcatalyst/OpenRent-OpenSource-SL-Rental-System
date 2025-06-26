@@ -1,0 +1,38 @@
+✅ FIXED: mesh faces aren't properly changing, there must be more messages missing?
+✅ FIXED: check the rental script.lsl to see all messages for the mesh script.
+✅ FIXED: unavailable and lock menus do not work - no dialog popup to handle anything. 
+✅ FIXED: Release works now but it doesnt seem to kick out the messages needed for the mesh script to fix the textures.
+
+## FIXES APPLIED:
+
+1. **Mesh Messages Fixed**:
+   - Added proper `Mesh:Locked` and `Mesh:Unavailable` messages
+   - Added `Mesh:Idle` message to Release action
+   - Separated Lock and Unavailable actions for proper mesh communication
+
+2. **Lock/Unavailable Dialog Fixed**:
+   - Added `UI:ShowUnlockDialog` command to UI Manager
+   - Added `confirm_unlock` context handler in processMenuSelection
+   - Updated locked state to show proper unlock dialog instead of just a message
+   - Added `Core:Action^Unlock` handling
+
+3. **Release Texture Fix**:
+   - Release action now sends `Mesh:Idle` message before state change
+   - This ensures mesh script receives the proper texture change command
+
+## MESH MESSAGES NOW WORKING:
+- `Mesh:Initializing` - On startup
+- `Mesh:Idle` - Available for rent
+- `Mesh:Rented` - Currently rented
+- `Mesh:Locked` - Locked by owner
+- `Mesh:Unavailable` - Marked unavailable
+- `Mesh:Reserved` - Reserved for specific renter
+- `Mesh:Grace` - In grace period
+- `Mesh:Update^{time}` - Time remaining updates
+
+## DIALOG FLOWS NOW WORKING:
+- Lock → Shows unlock dialog → Confirms unlock
+- Unavailable → Shows unlock dialog → Confirms unlock  
+- Release → Shows termination dialog → Confirms release → Sends Mesh:Idle
+
+Ready for next round of testing!

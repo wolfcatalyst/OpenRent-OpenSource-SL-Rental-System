@@ -71,20 +71,33 @@ applyGlow(list faces, float glow) {
 updateMeter(float remainingTime) {
     bestTimeFrame = 0.0; // Reset best time frame for new calculation
     bestTexture = ""; // Reset best texture for new calculation
+    float largestTimeFrame = 0.0; // Track the largest available timeframe
+    string largestTexture = ""; // Track the texture for the largest timeframe
     
     integer i;
     for (i = 0; i < llGetListLength(meterTimeFrames); i++) {
         float timeFrame = llList2Float(meterTimeFrames, i);
+        string texture = llList2String(meterTextures, i);
+        
+        // Track the largest timeframe available
+        if (timeFrame > largestTimeFrame) {
+            largestTimeFrame = timeFrame;
+            largestTexture = texture;
+        }
+        
+        // Find the best texture: smallest timeframe that's >= remaining time
         if (remainingTime <= timeFrame && (bestTimeFrame == 0.0 || timeFrame < bestTimeFrame)) {
-            bestTexture = llList2String(meterTextures, i);
+            bestTexture = texture;
             bestTimeFrame = timeFrame;
         }
     }
 
-    // Default to the last texture if no suitable one was found
+    // If no suitable texture was found (remaining time exceeds all timeframes),
+    // use the largest available timeframe texture
     if (bestTexture == "") {
-        bestTexture = llList2String(meterTextures, -1);
-        bestTimeFrame = llList2Float(meterTimeFrames, -1);
+        bestTexture = largestTexture;
+        bestTimeFrame = largestTimeFrame;
+        llOwnerSay("DEBUG: Remaining time (" + (string)remainingTime + ") exceeds all timeframes. Using largest: " + bestTexture + " (" + (string)bestTimeFrame + ")");
     }
 
     // Apply the best texture to the TIME_DISPLAY face without adjusting other settings
@@ -107,14 +120,6 @@ updateMeter(float remainingTime) {
     //llOwnerSay("Calculated Offset: " + (string)offset);
     //llOwnerSay("Remaining Time: " + (string)remainingTime + ", Best Time Frame: " + (string)bestTimeFrame);
 }
-
-
-
-
-
-
-
-
 
 // Function to handle link messages
 handleLinkMessage(string message) {
@@ -215,10 +220,20 @@ initializeMeterTextures() {
             if (timeFrame != -1) {
                 meterTextures += [textureName];
                 meterTimeFrames += [timeFrame];
+                llOwnerSay("Added timeframe: " + textureName + " = " + (string)timeFrame + " seconds (" + (string)(timeFrame/86400.0) + " days)");
             }
         }
-
     }
+    
+    // Debug: Show all loaded timeframes in order
+    llOwnerSay("=== LOADED TIMEFRAMES ===");
+    integer j;
+    for (j = 0; j < llGetListLength(meterTimeFrames); j++) {
+        float tf = llList2Float(meterTimeFrames, j);
+        string tex = llList2String(meterTextures, j);
+        llOwnerSay((string)j + ": " + tex + " = " + (string)(tf/86400.0) + " days");
+    }
+    llOwnerSay("========================");
 }
 
 // Default state
