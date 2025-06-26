@@ -85,13 +85,13 @@ The OpenRent system supports integration with third-party systems through custom
 - Range: 0-100
 - 0 = No discount
 - 25 = 25% off 4-week package
-- 100 = Free 4-week package (not recommended)
+- 100 = Free 4-week package (not recommended, you silly goose)
 
 ### Grace Period
-- Range: 0-8760 hours (1 year maximum)
 - 0 = No grace period
+- 12 = half a day
 - 24 = 1 day grace period
-- 168 = 1 week grace period
+- You can set longer but not recommended. Keep it to under a couple days for your own sanity
 
 ### Mesh Alpha
 - Range: 0.0-1.0
@@ -109,7 +109,7 @@ The OpenRent system supports integration with third-party systems through custom
 
 ### Basic Rental (Minimal Settings)
 ```
-Spot Name: Basic Rental
+Spot Name: Basic Rental 01
 Rental Cost: 500
 Prim Count: 100
 Rental Size: 256
@@ -119,7 +119,7 @@ Welcome Notecard: Welcome Notecard
 
 ### Premium Rental (Full Features)
 ```
-Spot Name: Premium Skybox Rental
+Spot Name: Premium Skybox Rental 25
 Rental Cost: 2000
 Discount Percent: 15
 Prim Count: 500
@@ -135,7 +135,7 @@ Group UUID: 12345678-1234-1234-1234-123456789012
 
 ### Commercial Rental (No Refunds, Group Payments)
 ```
-Spot Name: Commercial Space
+Spot Name: Commercial Space 105
 Rental Cost: 5000
 Prim Count: 1000
 Rental Size: 2048
@@ -147,9 +147,9 @@ Email for Notifications: business@example.com
 
 ## Important Notes
 
-1. **Email Notifications**: Emails cause a 20-second delay after sending. Don't use email if you need immediate responsiveness.
+1. **Email Notifications**: Emails cause a 20-second delay after sending. System will 'sleep' while sending emails. This is a limitation of Second Life
 
-2. **Refunds vs Group Payments**: Don't enable both `Refunds Enabled` and `Allow Group Payment` simultaneously.
+2. **Refunds vs Group Payments**: Don't enable both `Refunds Enabled` and `Allow Group Payment` simultaneously. Refunds are disabled automatically if owner or group payments are enabled to prevent fraud. Enable at your own risk.
 
 3. **Texture Names**: Texture names are case-sensitive and must match textures in the rental box inventory.
 

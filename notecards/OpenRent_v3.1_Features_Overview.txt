@@ -1,3 +1,41 @@
+Getting Started
+Configure Notecards: Add your information to the notecards. Disable any you don't need by leaving them blank from the Settings card or commenting them out with #.
+Set Up Settings Card: Include required rental information like cost and parcel size.
+
+##TLDR SETUP INSTRUCTIONS HERE##
+Save as Template: Rename the mesh, remove extra items, optionally pre-configure the notecard and save a copy to your inventory for quick setup at rental locations.
+To Update an older rental system that is currently being rented, Set up as described above, then copy the description from the old system to your new template.
+In the new template, reset the scripts manually or via the dialog menu and accept the pop-up payment dialog. The system is now ready.
+
+#######################
+
+Transferred Features from Old Version
+Email Notifications: Track transactions easily (disabled by default).
+Group Invite: Add your group ID and name to enable.
+Notecard Options: Customizable for INFO and rental.
+Refund System: Options for off, no fee, or with a fee.
+Reserve Option: Reserve rentals for specific renters.
+Persistent Lease Info: Pick up, reset, and place without losing data.
+API Integration: Via Linked Messages.
+New Features
+Floating Text: Toggle on/off.
+Grace Period: Configurable, set to 0 or leave blank to skip.
+Lock Options: Unavailable or Locked with custom messages.
+Rental Textures Provided:
+Initializing
+Available for Rent
+Overdue (Red/Orange)
+Locked (Purple)
+Unavailable (Grey)
+Rented (customizable)
+Custom Textures: Rename to match or adjust names in the settings notecard. Basic templates provided.
+Time Period Textures: Provided for 7 days, 4 weeks, 8 weeks, 12 weeks, 6 months, and 12 months. Customizable naming scheme.
+Included Scripts
+Face Definer: Identify mesh faces for custom work.
+RentalSignDeleteScript & DieScript: Automate removal of signs/objects upon rental.
+Open Source & Customizable
+All scripts and textures are open source. Modify, add features, or use your own meshes as needed.
+
 OpenRent v3.1 - Features Overview
 ==================================
 
@@ -20,8 +58,8 @@ Smart Notifications
 -------------------
 • DUAL DELIVERY: Both instant message and email notifications
 • Smart reminders: 48-hour, 24-hour, 6-hour, and 1-hour lease expiration warnings
-• Owner alerts: Real-time notifications for all rental activities
-• Offline corrections: Automatic time adjustments with owner notifications
+• Owner alerts: Real-time notifications for all rental activities IM and optional email for easier tracking
+• Offline corrections: Automatic time adjustments with owner notifications - if the rental box is picked up or sent to inventory, it will automatically adjust itself when put back down
 • Professional notification system
 
 Management Features
@@ -39,7 +77,7 @@ Advanced Features
 • Adaptive Timers: Performance optimization based on lease urgency
 • Memory Optimized: Efficient script architecture
 • State Persistence: Maintains data through script resets
-• Integration Ready: Built-in support for security and teleport systems
+• Integration Ready: modular system designed to be plug n play
 
 INCLUDED MODULES
 ================
@@ -65,32 +103,19 @@ FUTURE MODULES (In Development)
 
 HTTP Module
 -----------
-• Remote monitoring and management
-• Web-based rental dashboard
-• API integration capabilities
-• Real-time status reporting
-
 Security Integration Module
 ---------------------------
-• Automatic access granting/revoking
-• Integration with existing security systems
-• Configurable security protocols
-• Multi-system compatibility
-
 Teleport Integration Module
 ---------------------------
-• Automatic teleport system management
-• Landmark distribution
-• Position-based teleporting
-• Multi-destination support
+Estate Rental Module
+---------------------------
 
 COMPETITIVE ADVANTAGES
 ======================
 
 vs. CasperLet and Similar Systems
 ---------------------------------
-• NO EXTERNAL DEPENDENCIES: Works entirely within Second Life
-• INSTANT RESPONSIVENESS: No network latency or API delays
+• NO EXTERNAL DEPENDENCIES: Works entirely within Second Life without external dependencies
 • OFFLINE RESILIENCE: Handles real-world SL scenarios
 • MODULAR ARCHITECTURE: Expandable without core system changes
 • OPEN SOURCE: Full customization and transparency
@@ -102,18 +127,8 @@ Technical Superiority
 • HYBRID APPROACH: Local reliability with modern features
 • STATE PERSISTENCE: Survives script resets and inventory storage
 • MEMORY EFFICIENT: Optimized for SL script limitations
-• CHANNEL MANAGEMENT: Secure inter-component communication
 • ERROR RECOVERY: Graceful handling of edge cases
 
-SYSTEM SPECIFICATIONS
-=====================
-
-• Script Memory: Optimized for SL 64KB limit per script
-• Timer Resolution: 1-minute minimum, adaptive scaling
-• Module Capacity: 20 modules maximum (configurable)
-• Channel Range: Full LSL integer range
-• Data Persistence: Object description + variable storage
-• Notification Delay: 20 seconds for email, instant for IM
 
 INSTALLATION REQUIREMENTS
 =========================
@@ -142,19 +157,19 @@ LICENSE:
 This project is open source and provided under included license terms.
 • Commercial Use: Permitted under license terms
 • Modifications: Encouraged for personal and commercial use
-• Distribution: Allowed with proper attribution
+• Distribution: Allowed with proper attribution and with minor requirements which are available in the license documentation.
 
 SUPPORT:
-Official Support: Available only for users who purchased the system directly from Wolf Catalyst in Second Life or from the SL Marketplace.
+Official Support: Available only for users who purchased the system directly from Wolf Starforge in Second Life or from the SL Marketplace.
 
 Marketplace Link: https://marketplace.secondlife.com/p/OpenRent-OS-Mesh-Rental-System/25754107
 
 Community Support:
-• GitHub Issues for bug reports and feature requests
+• GitHub Issues for bug reports and feature requests but contact Wolf Starforge in-game is preferred.
 • Fork and contribute improvements
 • Share modules and extensions
 
-No Support Policy: Downloaded versions from GitHub or third parties are provided as-is without support. You're welcome to troubleshoot, fork, or collaborate, but please don't contact Wolf Catalyst for help unless you're using the official in-world product.
+No Support Policy: Downloaded versions from GitHub are provided as-is. Versions from third parties are neither endorsed nor supported by Wolf Starforge. 
 
 VERSION HISTORY
 ===============

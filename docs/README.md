@@ -22,7 +22,7 @@ OpenRent v3.1 is a comprehensive rental management system designed for Second Li
 ## ✨ Core Features
 
 ### 💰 Payment & Billing
-- Multiple payment options (1 week, 2 weeks, 3 weeks, 4 weeks)
+- Multiple payment options (1 week, 2 weeks, 3 weeks, 4 weeks, Custom payments after initial week)
 - Configurable 4-week package discounts
 - Automatic refund system with configurable fees
 - Owner and group payment support
@@ -36,7 +36,7 @@ OpenRent v3.1 is a comprehensive rental management system designed for Second Li
 
 ### 🎛️ Management Features
 - Touch-based menu system for owners and renters
-- Lock/unlock functionality
+- Lock/unlock functionality - Owner only
 - Reserve spaces for specific renters
 - Floating text display (configurable)
 - Mesh texture state management
@@ -70,9 +70,9 @@ OpenRent v3.1 is a comprehensive rental management system designed for Second Li
 The OpenRent system features a powerful modular architecture that allows developers to extend functionality through custom modules. The system includes:
 
 - **Channel-based Communication**: Secure inter-module messaging
-- **Auto-registration**: Modules automatically register with the system
-- **Role-based Access**: Proper permission handling for different user types
-- **Template System**: Use Hello World module as a starting point
+- **Auto-registration**: OpenRent Modules automatically register with the system
+- **Role-based Access**: Proper permission handling for different user types - Owner, Renter, Stranger
+- **Template System**: Use Hello World module as a starting point to create your own modules
 
 Create your own modules to add custom features like web integration, security systems, teleport management, or any other functionality your rental business needs.
 

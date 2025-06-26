@@ -1,4 +1,9 @@
 // Mesh Script for Rental Box
+//Created by Wolf Starforge
+//Version 3.1.0
+//Date: 2025-06-26
+//Open Source: See license file for more information.
+
 
 // Variables
 integer SIGN_FRONT = 2;
@@ -97,7 +102,7 @@ updateMeter(float remainingTime) {
     if (bestTexture == "") {
         bestTexture = largestTexture;
         bestTimeFrame = largestTimeFrame;
-        llOwnerSay("DEBUG: Remaining time (" + (string)remainingTime + ") exceeds all timeframes. Using largest: " + bestTexture + " (" + (string)bestTimeFrame + ")");
+        //llOwnerSay("DEBUG: Remaining time (" + (string)remainingTime + ") exceeds all timeframes. Using largest: " + bestTexture + " (" + (string)bestTimeFrame + ")");
     }
 
     // Apply the best texture to the TIME_DISPLAY face without adjusting other settings
@@ -161,6 +166,7 @@ handleLinkMessage(string message) {
             applyGlow(floatingSignFaces, meshGlow);
         } else {
             applyFullAlpha(floatingSignFaces);
+            applyGlow(floatingSignFaces, 0.0);
         }
     } else if (command == "Mesh:Grace") {
         // Set the floating sign to "Overdue"
@@ -220,20 +226,20 @@ initializeMeterTextures() {
             if (timeFrame != -1) {
                 meterTextures += [textureName];
                 meterTimeFrames += [timeFrame];
-                llOwnerSay("Added timeframe: " + textureName + " = " + (string)timeFrame + " seconds (" + (string)(timeFrame/86400.0) + " days)");
+                //llOwnerSay("Added timeframe: " + textureName + " = " + (string)timeFrame + " seconds (" + (string)(timeFrame/86400.0) + " days)");
             }
         }
     }
     
     // Debug: Show all loaded timeframes in order
-    llOwnerSay("=== LOADED TIMEFRAMES ===");
+    //llOwnerSay("=== LOADED TIMEFRAMES ===");
     integer j;
     for (j = 0; j < llGetListLength(meterTimeFrames); j++) {
         float tf = llList2Float(meterTimeFrames, j);
         string tex = llList2String(meterTextures, j);
-        llOwnerSay((string)j + ": " + tex + " = " + (string)(tf/86400.0) + " days");
+        //llOwnerSay((string)j + ": " + tex + " = " + (string)(tf/86400.0) + " days");
     }
-    llOwnerSay("========================");
+    //llOwnerSay("========================");
 }
 
 // Default state

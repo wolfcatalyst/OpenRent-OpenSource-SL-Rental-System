@@ -2,7 +2,7 @@
 
 ## 🎉 **REFACTORING COMPLETE!** 
 
-Your OpenRent rental system has been successfully refactored from a monolithic 891-line script into a modular, extensible system. You now have **complete separation of concerns** and will **never need to modify the core rental script again** for new features.
+Your OpenRent rental system has been successfully refactored from a monolithic script into a modular, extensible system. You now have **complete separation of concerns** and will **never need to modify the core rental script again** for new features.
 
 ## 📁 **New File Structure**
 

@@ -1,5 +1,10 @@
-//Rental Core Script v3.0 - Memory Optimized
+//Rental Core Script v3.1 - Memory Optimized
 //Core rental logic only - UI handled by UI Manager
+//Created by Wolf Starforge
+//Version 3.1.0
+//Date: 2025-06-26
+//Open Source: See license file for more information.
+
 
 // Core variables (reduced to essentials)
 string myGroupName;
@@ -252,46 +257,6 @@ processAction(string action, key userID, string params, integer responseChannel)
         }
         // Send response back on the same channel we received the request
         llMessageLinked(LINK_SET, responseChannel, "Core:UserRole^" + role + "^" + (string)userID, NULL_KEY);
-    } else if (action == "AutoStart") {
-        // Auto-Tier activation from module
-        // Format: Core:AutoStart^renterID^renterName^cost^duration
-        list autoParams = llParseString2List(params, ["^"], []);
-        if (llGetListLength(autoParams) >= 4) {
-            key autoRenterID = (key)llList2String(autoParams, 0);
-            string autoRenterName = llList2String(autoParams, 1);
-            integer autoCost = (integer)llList2String(autoParams, 2);
-            float autoDuration = (float)llList2String(autoParams, 3);
-            
-            // Only auto-start if currently idle
-            if (currentState == "idle" || currentState == "unavailable") {
-                renterID = autoRenterID;
-                renterName = autoRenterName;
-                rentalTime = autoDuration;
-                
-                // Reset reminder flags for new rental
-                reminder48sent = FALSE;
-                reminder24sent = FALSE;
-                reminder6sent = FALSE;
-                reminder1sent = FALSE;
-                
-                saveData();
-                
-                // Give welcome notecard if configured
-                if (welcomeNotecard != "") llGiveInventory(autoRenterID, welcomeNotecard);
-                
-                // Invite to group if configured
-                if (myGroupID != "" && myGroupID != "00000000-0000-0000-0000-000000000000") {
-                    llInstantMessage(autoRenterID, "Join group: secondlife:///app/group/" + myGroupID + "/about");
-                }
-                
-                currentState = "rented";
-                llMessageLinked(LINK_SET, 0, "Core:ChangeState^rented", NULL_KEY);
-                
-                llOwnerSay("Auto-Tier: Rental activated for " + autoRenterName + " - " + getTimeString(llRound(autoDuration)));
-            } else {
-                llOwnerSay("Auto-Tier: Cannot auto-start - rental box is not idle (current state: " + currentState + ")");
-            }
-        }
     }
 }
 

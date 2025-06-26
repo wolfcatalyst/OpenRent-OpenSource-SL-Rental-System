@@ -1,5 +1,10 @@
-//UI Manager Script v2.0 - Memory Optimized with Module Pagination
+//UI Manager Script v3.1.0 - Memory Optimized with Module Pagination
 //Handles all dialog interactions and user interface logic with pagination support
+//Created by Wolf Starforge
+//Version 3.1.0
+//Date: 2025-06-26
+//Open Source: See license file for more information.
+
 
 // Constants
 integer DIALOG_CHANNEL_BASE = 1000000;

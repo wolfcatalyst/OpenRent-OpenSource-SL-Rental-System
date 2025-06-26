@@ -1,4 +1,4 @@
-//Prim Counter Module v3.2 - Strict Channel Communication
+//Prim Counter Module v3.1 - Strict Channel Communication
 //Configurable Access and Reports with Aggressive Mode - Strict channel-only communication
 
 // Module information
@@ -356,7 +356,7 @@ default {
         loadSettings();
         // Register this module - send on channel 0 so all scripts receive it
         llMessageLinked(LINK_SET, 0, "Module:Register^" + MODULE_NAME + "^" + llDumpList2String(MODULE_CAPABILITIES, ",") + "^" + (string)assignedChannel, NULL_KEY);
-        llOwnerSay("Prim Counter v3.2: Strict channel communication with aggressive mode loading...");
+        //llOwnerSay("Prim Counter v3.2: Strict channel communication with aggressive mode loading...");
         
         // Request current rental data when module starts
         llMessageLinked(LINK_SET, 0, "UI:RequestData", NULL_KEY);
@@ -457,7 +457,7 @@ default {
                 if (aggressiveMode == "enabled") {
                     modeStatus = "active";
                 }
-                llOwnerSay("Prim Counter: State changed to rented - aggressive mode " + modeStatus);
+                //llOwnerSay("Prim Counter: State changed to rented - aggressive mode " + modeStatus);
             }
             // Check aggressive mode immediately when entering rented state
             if (aggressiveMode == "enabled") {
@@ -471,7 +471,7 @@ default {
             currentState = llToLower(newState);
             
             if (updateNotifications == "yes") {
-                llOwnerSay("Prim Counter: State changed to " + currentState + " - aggressive mode disabled");
+                //llOwnerSay("Prim Counter: State changed to " + currentState + " - aggressive mode disabled");
             }
             
             // Reset aggressive mode when leaving rented state
@@ -490,7 +490,7 @@ default {
             if (newState != "rented" && aggressiveActive) {
                 aggressiveActive = FALSE;
                 if (updateNotifications == "yes") {
-                    llOwnerSay("Prim Counter: Aggressive mode deactivated (not rented)");
+                    //llOwnerSay("Prim Counter: Aggressive mode deactivated (not rented)");
                 }
             }
         }

@@ -1,6 +1,11 @@
-//Module Manager Script v2.1 - Strict Channel Communication
+//Module Manager Script v3.1.0 - Strict Channel Communication
 //Lightweight module system with pagination support for large module lists
 //Strict channel-only communication (no backwards compatibility)
+//Created by Wolf Starforge
+//Version 3.1.0
+//Date: 2025-06-26
+//Open Source: See license file for more information.
+
 
 // Simplified module registry (increased limit for pagination testing)
 list moduleNames = [];
@@ -41,7 +46,6 @@ sendModuleRequest(string name, string action, string params, key user) {
     for (i = 0; i < llGetListLength(moduleNames); i++) {
         if (llList2String(moduleNames, i) == name) {
             channel = llList2Integer(moduleChannels, i);
-            break;
         }
     }
     
@@ -58,7 +62,7 @@ sendModuleRequest(string name, string action, string params, key user) {
 
 default {
     state_entry() {
-        llOwnerSay("Module Manager v2.1: Strict channel communication enabled. Max " + (string)maxModules + " modules, " + (string)modulesPerPage + " per page.");
+        llOwnerSay("Module Manager v3.1: Strict channel communication enabled. Max " + (string)maxModules + " modules, " + (string)modulesPerPage + " per page.");
     }
     
     link_message(integer sender_num, integer num, string message, key id) {

@@ -46,15 +46,3 @@ Note: I've included a few scripts that I use regularly. These can be deleted fro
 Face Definer - This is useful for determining the number of a particular face of a mesh. Useful for creating your own meshes or custom scripts.
 RentalSignDeleteScript and DieScript - RentalSignDeleteScript - leave this in the OpenRent mesh. Put the DieScript into the sign/object you want self deleted if a property is rented.
 I use this to remove floating signs, Logo boards etc., so a new tenant doesn't need to deal with those if I'm not able to get online and remove them myself.
-
-
-ToDo: 
-    - Test grace period - TESTED. Seems good.
-    - Splitting up some of the scripts to make them more memory efficient.
-    - Remove / comment out some debugging code
-    - Adjust the refresh time period to be more flexible/ practical. 60 seconds isn't unreasonable, but if a parcel is leased for 2 months, there's no reason to update the time period every 60 seconds.
-        - This will be changed to update based on how long a lease is, as well as on demand (interacting with the system will update the rental period)
-        
-    - Working on HTTP reports next, with some web interactivity via an optional plugin.
-    - Teleporter with plugin  - ideal for skybox rental
-    - 'See my other properties' (maybe)
