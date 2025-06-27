@@ -98,7 +98,7 @@ Create your own modules to add custom features like web integration, security sy
 ## ⚙️ Configuration
 
 ### Basic Setup
-See [SETTINGS_REFERENCE.md](../SETTINGS_REFERENCE.md) for complete configuration documentation.
+See [SETTINGS_REFERENCE.md](/docs/SETTINGS_REFERENCE.md) for complete configuration documentation.
 
 **Minimum Required Settings:**
 ```
@@ -219,8 +219,8 @@ This project is open source and provided under the included license terms. See [
 ## 🚀 Getting Started
 
 1. **Download**: Get the system from official sources
-2. **Quick Setup**: Follow [QUICK_START_GUIDE.md](../QUICK_START_GUIDE.md)
-3. **Configure**: Edit settings using [SETTINGS_REFERENCE.md](../SETTINGS_REFERENCE.md)
+2. **Quick Setup**: Follow [QUICK_START_GUIDE.md](/docs/QUICK_START_GUIDE.md)
+3. **Configure**: Edit settings using [SETTINGS_REFERENCE.md](/docs/SETTINGS_REFERENCE.md)
 4. **Deploy**: Rez and test your rental system
 5. **Customize**: Add modules and integrate with existing systems
 
