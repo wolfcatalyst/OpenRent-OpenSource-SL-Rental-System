@@ -4,7 +4,7 @@
 
 ## 🚀 Quick Start
 
-**Need it running NOW?** See [QUICK_START_GUIDE.md](../QUICK_START_GUIDE.md)
+**Need it running NOW?** See [QUICK_START_GUIDE.md](docs/QUICK_START_GUIDE.md)
 
 **Upgrading from older version?** See the "GET IT UPDATED NOW" section in the Quick Start Guide.
 
